@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+<body>
+    <div class="container">
+        <!-- ________header________- -->
+        <div class="header">
+            <i class="material-icons-outlined menu_bar">menu</i>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="search">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="right_icons">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">message</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </div>
+        <!-- ___________aside_____ -->
+        <div class="left aside">
+            <i class="material-icons-outlined close">close</i>
+            <div class="main_icon icons">
+            <i class="material-icons-outlined">dataset</i>
+            <h1>dashboard</h1>
+            </div>
+            <p class="list">___ PAGES</p>
+            <div class="icons">
+               <i class="material-icons-outlined">view_list</i>
+               <p>layout</p>
+            </div>
+            <div class="icons">
+                <i class="material-icons-outlined">width_normal</i>
+                <p>accounting setting</p>
+             </div>
+             <div class="icons">
+                <i class="material-icons-outlined">lock</i>
+                <p>authentication</p>
+             </div>
+             <div class="icons">
+                <i class="material-icons-outlined">music_note</i>
+                <p>music</p>
+             </div>
+             <p class="list">___ COMPONENTS</p>
+             <div class="icons">
+                <i class="material-icons-outlined">credit_card</i>
+                <p>cards</p>
+             </div>
+             <div class="icons">
+                <i class="material-icons-outlined">web_asset</i>
+                <p>user interface</p>
+             </div>
+             <div class="icons">
+               <i class="material-icons-outlined">account_balance</i>
+               <p>balance</p>
+            </div>
+            <p class="list">___ FORMS</p>  
+            <div class="icons">
+               <i class="material-icons-outlined">description</i>
+               <p>forms elements</p>
+            </div>  
+            <div class="icons">
+               <i class="material-icons-outlined">fact_check</i>
+               <p>forms layouts</p>
+            </div>     
+            <div class="icons">
+               <i class="material-icons-outlined">table_view</i>
+               <p>tables</p>
+            </div>
+        </div>
+        <!-- __________main -->
+        <div class="main">
+         <h2>Analytic dashboard</h2>
+         <div class="upper_container">
+            <div class="left_side">
+               <div id="recentchart"></div>
+            </div>
+            <div class="right_side">
+               <div>
+                  <div class="box">
+                     <h2>sales</h2>
+                     <h3>338.0</h3>
+                     <p><span class="in">+4.5% </span>since last week</p>
+                  </div>
+                  <div class="box">
+                     <h2>earning</h2>
+                     <h3>$338</h3>
+                     <p><span class="de">-2.5% </span>since last week</p>
+                  </div>
+               </div>
+               <div>
+                  <div class="box">
+                     <h2>orders</h2>
+                     <h3>338.0</h3>
+                     <p><span class="de">-1.5% </span>since last week</p>
+                  </div>
+                  <div class="box">
+                     <h2>visitors</h2>
+                     <h3>300</h3>
+                     <p><span class="in">+3.5% </span>since last week</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bottom-container">
+            <div class="bottom_left">
+               <h1>users</h1>
+               <p>1222,30 users registered</p>
+               <table>
+                  <tr>
+                     <th>users</th>
+                     <th>country</th>
+                     <th>usage</th>
+                     <th>activity</th>
+                  </tr>
+                  <tr>
+                     <td class="user"><img src="pic1.jpg" alt=""><div>smith<p>uk</p></div></td>
+                     <td>Europe</td>
+                     <td>50%</td>
+                     <td><p>last login</p>30 minutes ago</td>
+                  </tr>
+                  <tr>
+                     <td class="user"><img src="pic2.jpg" alt=""><div>john<p>london</p></div></td>
+                     <td>london</td>
+                     <td>40%</td>
+                     <td><p>last login</p>20 sec ago</td>
+                  </tr>
+                  <tr>
+                     <td class="user"><img src="pic3.jpg" alt=""><div>smith<p>australia</p></div></td>
+                     <td>australia</td>
+                     <td>20%</td>
+                     <td><p>last login</p>5 minutes ago</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="bottom_right">
+               <div class="box-1">
+                  <h1>user</h1>
+                  <h4>24k(12.4%)</h4>
+                  <p>number of people visit</p>
+               </div>
+               <div class="box-1">
+                  <h1>conversion rate</h1>
+                  <h4>2k(10.4%)</h4>
+                  <p>number of people meet</p>
+               </div>
+               <div class="box-1 box-2">
+                  <h4>"quality is not an act , it is a habit"</h4>
+               </div>
+            </div>
+         </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.44.0/apexcharts.min.js" integrity="sha512-9ktqS1nS/L6/PPv4S4FdD2+guYGmKF+5DzxRKYkS/fV5gR0tXoDaLqqQ6V93NlTj6ITsanjwVWZ3xe6YkObIQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>

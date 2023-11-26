@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Montserrat&family=Poppins&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: "left header"
+    "left main";
+    grid-template-columns: 280px 4fr;
+    grid-template-rows: 100px 1fr;
+}
+/* ________header________ */
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin: 1%;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.search span{
+    position: absolute;
+    color: #888;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.search input{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.right_icons span{
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+.right_icons span:hover{
+    color: #c1bebe;
+}
+.header .menu_bar{
+    color: white;
+    display: none;
+}
+/* _________aside_____-- */
+.left{
+    grid-area: left;
+    background-color: blueviolet;
+    color: white;
+}
+.left .icons{
+    display: flex;
+    align-items: center;
+    padding: 4%;
+}
+.icons i{
+    font-size: 25px;
+    padding-right: 5px;
+}
+.main_icon{
+    margin: 5%;
+    background-color: rgb(189 118 255 / 44%);
+    border-radius: 15px;
+}
+.main_icon i{
+    font-size: 30px;
+}
+.list{
+    color: #c1bebe;
+    padding: 5% 0;
+}
+.close{
+    position: absolute;
+    left: 85%;
+    top: 11%;
+    color: white;
+    display: none;
+}
+/* ___________main */
+.main{
+    grid-area: main;
+    margin-left: 2%;
+}
+.main h2{
+    padding: 1% 0;
+}
+.upper_container,.bottom-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.left_side{
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+}
+.right_side{
+    display: flex;
+}
+.right_side div{
+    margin-left: 3%;
+    flex-basis: 45%;
+}
+.box{
+    background-color: whitesmoke;
+    margin: 0 0 8% 0;
+    padding: 5%;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+}
+.box h3{
+    padding: 5% 0;
+}
+.box .in{
+    color: blue;
+}
+.box .de{
+    color: red;
+}
+.box p{
+    color: #888;
+}
+/* ________bottom-container */
+.bottom_left{
+    background-color: #f9f9f9;
+    margin-top: 2%;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+    padding: 1% 2%;
+}
+.bottom_left .user{
+    display: flex;
+}
+.bottom_left .user div{
+    padding-left: 12px;
+}
+.bottom_left p{
+    color: #888;
+}
+table{
+    width: 100%;
+}
+table th{
+    text-align: left;
+    padding: 12px 0;
+}
+table td{
+    padding-bottom: 10px;
+}
+table td img{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+}
+.box-1{
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+    color: aliceblue;
+    background-color: blueviolet;
+    margin: 3% 5%;
+    padding: 2%;
+}
+.box-1 h4{
+    padding: 2% 0;
+}
+.box-2{
+    background-color: orange;
+    text-align: center;
+    color: blueviolet;
+}
+/* ________responsive */
+@media only screen and (max-width:890px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main";
+    }
+    .aside{
+        display: none;
+    }
+    .header .menu_bar{
+        display: block;
+    }
+    .left{
+        width: 45%;
+        z-index: 1;
+        position: absolute;
+    }
+}
+@media only screen and (max-width:625px){
+    .upper_container,.bottom-container{
+        grid-template-columns: 2fr;
+        gap: 2%;
+    }
+    .main_icon{
+        font-size: 12px;
+    }
+    .left_side,.bottom_left{
+        margin-right: 2%;
+    }
+}
